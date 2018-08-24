@@ -1,0 +1,9 @@
+// Grid__col
+
+
+@for $i from 2 through 12 {
+    .grid__col--#{$i} {
+        width: 80%;
+    }       
+
+}
