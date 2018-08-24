@@ -1,15 +1,25 @@
 /* - Media Queries
 - Flexbox settings */
-@mixin mediamob ($dscreen) {
-    @media (max-width: $dscreen) {
+@mixin mediamob($dscreen) {
+  @media (max-width: $dscreen) {
     display: grid;
     @content;
-    }
+  }
 }
 
-@mixin mediatabdesk ($dscreen) {
-    @media (min-width: $dscreen) {
+@mixin mediatabdesk($dscreen) {
+  @media (min-width: $dscreen) {
     display: grid;
     @content;
-    }
+  }
 }
+
+@mixin myfun($ini, $end, $tag) {
+  @for $i from $ini through $end {
+    .grid__col--#{$i} {
+      color: #{$tag + $i}; // change with one map for color?
+    }
+  }
+}
+
+//  @include myfun(2, 12, "color");
