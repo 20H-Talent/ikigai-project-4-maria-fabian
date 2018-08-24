@@ -1,6 +1,5 @@
 %links {
     text-decoration: none;
-    @content;
 }
 
 %img {
@@ -9,11 +8,23 @@
     justify-content: center;
 }
 
-%headlines {
+%primary-headline {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    color: $color-primary;
+    font-family: $font-nav-text;
+    align-content: center;
+    margin-left: 15px;
+}
+
+%secondary-headline {
     font-weight: 100;
     display: flex;
     align-items: flex-start;
-    font-size: 150px;
+    font-size: 15px;
+    font-family: $font-nav-text;
+    color: $color-main;
 }
 
 %nav {
