@@ -1,4 +1,15 @@
 /* - Media Queries
 - Flexbox settings */
+@mixin mediamob ($dscreen) {
+    @media (max-width: $dscreen) {
+    display: grid;
+    @content;
+    }
+}
 
-@import
+@mixin mediatabdesk ($dscreen) {
+    @media (min-width: $dscreen) {
+    display: grid;
+    @content;
+    }
+}
