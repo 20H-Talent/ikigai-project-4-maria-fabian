@@ -1,5 +1,3 @@
-/* - Media Queries
-- Flexbox settings */
 @mixin mediamob($dscreen) {
   @media (max-width: $dscreen) {
     display: grid;
