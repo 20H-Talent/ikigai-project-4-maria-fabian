@@ -73,7 +73,6 @@ In this project, we’ve provided an index.html file with a set of class names a
   - Images 
   - Buttons 
   - Forms 
-  - Base folder 
 
 #### In your base folder, include a normalize.css file and create a base.scss file. 
 

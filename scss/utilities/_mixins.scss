@@ -14,6 +14,13 @@
   }
 }
 
+@mixin mediamobtab($dscreen) {
+    @media (max-width: $dscreen) {
+        display: grid;
+        @content;
+    }
+}
+
 @mixin myfun($ini, $end, $tag) {
   @for $i from $ini through $end {
     .grid__col--#{$i} {
@@ -22,4 +29,6 @@
   }
 }
 
-//  @include myfun(2, 12, "color");
+
+
+// @include myfun(2, 12, "$color-col-");

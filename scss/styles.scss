@@ -1,3 +1,13 @@
 @import './utilities/_index.scss';
 @import './components/_index.scss';
 @import './base/_index.scss';
+
+.nav__item {
+    border-radius: 2px;
+    &:hover{
+        color: $color-primary;
+    }
+}
+
+@include mediamobtab($break-t) {
+    color: tomato;};
