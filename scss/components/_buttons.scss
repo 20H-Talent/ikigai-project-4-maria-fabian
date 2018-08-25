@@ -1,18 +1,35 @@
-.btn {
-   
-    &--default {
+/*=========== BUTTONS ===============*/
 
-    }
-    &--success {
-
-    }
-    &--error {
-
-    }
-    &--warning {
-
-    }
-    &--info {
-        
-    }
+button {
+  font-family: $font-input-buttons;
+  border: none;
+  font-size: 1em;
+  height: 2.5em;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 0.75em 0em;
 }
+
+.btn {
+  &--default.theme__colors {
+    background-color: $color-default-button;
+  }
+  &--success.theme__colors {
+    background-color: $color-success-button;
+  }
+  &--error.theme__colors {
+    background-color: $color-error-button;
+  }
+  &--warning.theme__colors {
+    background-color: $color-warning-button;
+  }
+  &--info.theme__colors {
+    background-color: $color-info-button;
+  }
+}
+
+/*=========== END BUTTONS ===============*/
+
+/*---------------------------------------*/

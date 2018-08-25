@@ -1,13 +1,13 @@
 @import './utilities/_index.scss';
-@import './components/_index.scss';
 @import './base/_index.scss';
+@import './components/_index.scss';
 
-.nav__item {
-    border-radius: 2px;
-    &:hover{
-        color: $color-primary;
-    }
+
+div {
+    @include mediaq($break-t);
 }
 
-@include mediamobtab($break-t) {
-    color: tomato;};
+
+.container {
+    margin: 3em 2.8em 2em;
+}

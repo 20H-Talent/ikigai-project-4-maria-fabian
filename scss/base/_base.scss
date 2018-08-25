@@ -1,8 +1,10 @@
 * {
     box-sizing: border-box;
     display: grid;
+    margin: 0 auto;
 }
 
 ul {
-    display: block;
+    text-decoration: none;
+    list-style-type: none;
 }
