@@ -1,22 +1,18 @@
-@mixin mediamob($dscreen) {
-  @media (max-width: $dscreen) {
-    display: grid;
-    @content;
-  }
-}
+@mixin mediaq($dscreen) {
+  $mob: 480;
+  $tab: 796;
 
-@mixin mediatabdesk($dscreen) {
-  @media (min-width: $dscreen) {
-    display: grid;
-    @content;
-  }
-}
-
-@mixin mediamobtab($dscreen) {
-    @media (max-width: $dscreen) {
-        display: grid;
-        @content;
+  @if $dscreen <= $mob {
+    @media screen and (max-width: $dscreen) {
+      @content;
     }
+  }
+
+  @else if $dscreen > $mob {
+    @media screen and (min-width: $dscreen){
+      @content;
+    }
+  }
 }
 
 @mixin myfun($ini, $end, $tag) {
@@ -26,7 +22,5 @@
     }
   }
 }
-
-
 
 // @include myfun(2, 12, "$color-col-");
