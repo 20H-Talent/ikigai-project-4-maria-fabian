@@ -1,22 +1,19 @@
 /* =========== GRIDS ================*/
-
-:root {
-  --color: $color;
-  --color1: $color1;
-}
 .grid {
   &__row {
     display: grid;
-    grid-gap: 5px;
+    grid-gap: 0.5em;
     margin: 2em 0;
   }
   @for $i from 1 through 12 {
     &__col--#{$i}.theme__colors {
       $color: "color-" + $i;
       $color1: map-get($colours, $color);
+      display: grid;
       background-color: $color1;
       height: 2.5em;
       border-radius: 5px;
+      width: auto;
     }
   }
 }

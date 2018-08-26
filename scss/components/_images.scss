@@ -1,0 +1,15 @@
+img {
+  display: grid;
+}
+.img {
+  &--frame {
+    width: 100%;
+    padding: 1em;
+    border: 0.5px solid $color-main;
+    margin: 0.5em 0;
+  }
+  &--avatar,  &--logo {
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+}

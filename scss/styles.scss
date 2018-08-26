@@ -1,13 +1,11 @@
-@import './utilities/_index.scss';
-@import './base/_index.scss';
-@import './components/_index.scss';
-
+@import "./utilities/_index.scss";
+@import "./base/_index.scss";
+@import "./components/_index.scss";
 
 div {
-    @include mediaq($break-t);
+  @include mediaq($break-t);
 }
 
-
 .container {
-    margin: 3em 2.8em 2em;
+  margin: 3em 2.8em 2em;
 }
