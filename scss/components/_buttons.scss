@@ -36,6 +36,11 @@
   }
 }
 
+button.theme__colors:hover {
+  transition: ease-in-out .5s;
+  box-shadow: inset 0 0 10px #000000;
+}
+
 /*=========== END BUTTONS ===============*/
 
 /*---------------------------------------*/

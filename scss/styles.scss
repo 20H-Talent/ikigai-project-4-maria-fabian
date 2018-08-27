@@ -2,10 +2,3 @@
 @import "./base/_index.scss";
 @import "./components/_index.scss";
 
-div {
-  @include mediaq($break-t);
-}
-
-.container {
-  margin: 3em 2.8em 2em;
-}
