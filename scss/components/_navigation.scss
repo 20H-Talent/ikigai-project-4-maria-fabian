@@ -1,17 +1,23 @@
-nav {
-    display: grid;
-    width: 100%;
-}
-
-
 .nav {
     display: grid;
+    @include mediaq($break-t) {
+        display: inline-grid;
+        grid-gap: 0.5em;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
     &__item {
         @extend %nav;
         height: 3em;
         text-decoration: none;
-        font-size: 1em;
-        max-width: 90%;
+        font-size: get-vw(32px);
+        max-width: 100%;
+        @include mediaq ($break-t){
+            & {
+                display: grid;
+                width: auto;
+                font-size: get-vw(15px);
+            }
+        }
         &:hover {
             border-radius: 5px;
             background-color: $color-primary;

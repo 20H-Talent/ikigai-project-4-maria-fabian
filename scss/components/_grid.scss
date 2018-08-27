@@ -4,6 +4,9 @@
     display: grid;
     grid-gap: 0.5em;
     margin: 2em 0;
+    @include mediaq($break-t) {
+      grid-template-columns: 2fr 2fr;
+    };
   }
   @for $i from 1 through 12 {
     &__col--#{$i} {
