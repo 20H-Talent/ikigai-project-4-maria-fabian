@@ -4,7 +4,7 @@
 $color-primary: #58e1c1; //hover and lines color
 $color-text-nav: #5f5f5f; 
 $color-main: #808080;
-
+$color-highlights-loginbutton: #54defc;
 
     //buttons
 $color-default-button: #51ddfc;
@@ -14,22 +14,21 @@ $color-warning-button: #fd7856;
 $color-info-button: #927bc1;
 
     //Grid system
-$colours: (
-    color-1: #eee0b2,
-    color-2: #79b869,
-    color-3: #deb2ee,
-    color-4: #7ee6fd,
-    color-5: #88d9a0,
-    color-6: #3fabca,
-    color-7: #ec9fa3,
-    color-8: #fd9f85,
-    color-12: #80e8d1,
-    );
-
+    $colours: (
+        color-1: #eee0b2,
+        color-2: #79b869,
+        color-3: #deb2ee,
+        color-4: #7ee6fd,
+        color-5: #88d9a0,
+        color-6: #3fabca,
+        color-7: #ec9fa3,
+        color-8: #fd9f85,
+        color-12: #80e8d1,
+        );
 //------------------------
 //Fonts
 //-----------------------
-$font-nav-text: 'Lato', sans-serif; //main-nav and text font
+$font-nav-text: 'Helvetica Neue', 'Lato', sans-serif; //main-nav and text font
 $font-input-buttons: 'Nunito Sans', sans-serif; //inputs and buttons font
 
 //------------------------

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i');
 
 .card {
 margin-top: 6.25em;
@@ -11,9 +11,11 @@ margin-top: 6.25em;
 .headline--primary {
     @extend %primary-headline;
 }
-
-.card p {
-    font-size: 1.11em;
+.card em {
+    font-style: italic;
+}
+.card p{
+    font-size: 1.075em;
     color: $color-main;
     font-family: $font-nav-text;
     line-height: 1.5em;
@@ -21,17 +23,17 @@ margin-top: 6.25em;
 
 .link {
     @extend %links;
-    color: $color-default-button;
+    color: $color-highlights-loginbutton;
     font-weight: 600;
 }
 
 .blockquote {
     font-family: $font-nav-text;
     color: $color-main;
-    font-size: 1.5em;
+    font-size: 1.48em;
     font-style: italic;
     border-left: 0.35em solid $color-primary;
     border-radius: 0.2em;
-    padding-left: 0.9em;
-    margin-left: 0.9em;
+    padding: 0 1em;
+    margin: 1em;
 }
