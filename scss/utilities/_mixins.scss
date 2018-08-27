@@ -15,12 +15,10 @@
   }
 }
 
-@mixin myfun($ini, $end, $tag) {
-  @for $i from $ini through $end {
-    .grid__col--#{$i} {
-      color: #{$tag + $i}; // change with one map for color?
-    }
-  }
-}
-
-// @include myfun(2, 12, "$color-col-");
+// @mixin myfun($ini, $end, $tag) {
+//   @for $i from $ini through $end {
+//     .grid__col--#{$i} {
+//       color: #{$tag + $i}; // change with one map for color?
+//     }
+//   }
+// }
