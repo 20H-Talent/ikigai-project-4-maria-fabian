@@ -10,7 +10,7 @@ margin-top: 6.25em;
     @extend %primary-headline;
 }
 
-p {
+.card p {
     font-size: 1.11em;
     color: $color-main;
     font-family: $font-nav-text;
@@ -19,7 +19,7 @@ p {
 
 .link {
     @extend %links;
-    color: $color-highlights-loginbutton;
+    color: $color-default-button;
     font-weight: 600;
 }
 
