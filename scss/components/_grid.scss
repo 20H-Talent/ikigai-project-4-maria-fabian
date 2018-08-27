@@ -6,6 +6,9 @@
     margin: 2em 0;
   }
   @for $i from 1 through 12 {
+    &__col--#{$i} {
+      padding: 0 1em;
+    }
     &__col--#{$i}.theme__colors {
       $color: "color-" + $i;
       $color1: map-get($colours, $color);
