@@ -21,6 +21,7 @@
       $color1: map-get($colours, $color);
       display: grid;
       background-color: $color1;
+      @extend %grid_font;
       height: 2.5em;
       border-radius: 5px;
       width: auto;

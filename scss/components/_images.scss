@@ -3,7 +3,7 @@
     display: grid;
     width: 100%;
     padding: 1em;
-    border: 0.5px solid $color-main;
+    border: 0.5px solid lighten($color-main, 30%);
     margin: 0.5em 0;
   }
   &--avatar,  &--logo {
