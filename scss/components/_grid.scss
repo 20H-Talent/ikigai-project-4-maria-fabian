@@ -15,6 +15,7 @@
   @for $i from 1 through 12 {
     &__col--#{$i} {
       padding: 0 0.75em;
+      align-self: center;
     }
     &__col--#{$i}.theme__colors {
       $color: "color-" + $i;

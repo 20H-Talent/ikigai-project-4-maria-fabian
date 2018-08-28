@@ -6,9 +6,18 @@
     border: 0.5px solid lighten($color-main, 30%);
     margin: 0.5em 0;
   }
-  &--avatar,  &--logo {
+  &--avatar {
     display: grid;
     margin-top: 1em;
     margin-bottom: 2em;
+  } 
+  &--logo {
+    display: grid;
+    margin: 2em auto;
+    @include mediaq($break-t){
+      & {
+        margin: 0;
+      }
+    }
   }
 }
