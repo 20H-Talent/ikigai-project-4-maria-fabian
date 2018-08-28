@@ -1,0 +1,43 @@
+/* =========== GRIDS ================*/
+.container {
+  margin: 3em 2em;
+}
+
+.grid {
+  &__row {
+    display: grid;
+    grid-gap: 0.5em;
+    margin: 2.5em 0;
+    @include mediaq($break-t) {
+      grid-template-columns: 2fr 2fr;
+    }
+  }
+  @for $i from 1 through 12 {
+    &__col--#{$i} {
+      padding: 0 0.75em;
+      align-self: center;
+    }
+    &__col--#{$i}.theme__colors {
+      $color: "color-" + $i;
+      $color1: map-get($colours, $color);
+      display: grid;
+      background-color: $color1;
+      @extend %grid_font;
+      height: 2.5em;
+      border-radius: 5px;
+      width: auto;
+    }
+  }
+}
+
+.card {
+  @include mediaq($break-t) {
+    & {
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+  }
+}
+
+/*=========== END GRIDS ===============*/
+/*---------------------------------------*/

@@ -1,2 +1,24 @@
-/* - Media Queries
-- Flexbox settings */
+@mixin mediaq($dscreen) {
+  $mob: 480;
+  $tab: 796;
+
+  @if $dscreen <= $mob {
+    @media screen and (max-width: $dscreen) {
+      @content;
+    }
+  }
+
+  @else if $dscreen > $mob {
+    @media screen and (min-width: $dscreen){
+      @content;
+    }
+  }
+}
+
+// @mixin myfun($ini, $end, $tag) {
+//   @for $i from $ini through $end {
+//     .grid__col--#{$i} {
+//       color: #{$tag + $i}; // change with one map for color?
+//     }
+//   }
+// }
