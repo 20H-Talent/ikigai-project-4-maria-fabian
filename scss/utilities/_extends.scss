@@ -59,16 +59,16 @@
   color: $color-text-nav;
 }
 
-%grid {
-  display: flex;
-  flex-direction: column;
-  margin: 5px 15px;
-}
+// %grid {
+//   display: flex;
+//   flex-direction: column;
+// }
 
 %grid_font {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    font-family: $font-nav-text;
+    font-family: $font-input-buttons;
     color: $color-main;
+    font-weight: bold;
 }
