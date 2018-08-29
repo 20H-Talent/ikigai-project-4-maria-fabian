@@ -13,7 +13,7 @@
     flex-direction: column;
     justify-content: space-between;
     margin: 2.5em 0;
-    @include mediaq($break-t) {
+    &:first-child{
       flex-direction: row;
       justify-content: start;
     }
