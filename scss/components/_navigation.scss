@@ -10,6 +10,9 @@
     flex-direction: row;
     justify-content: space-between;
   }
+  @include mediaq($break-d){
+    justify-content: center;
+  }
   &__item {
     @extend %nav;
     height: 3em;
@@ -21,6 +24,9 @@
         display: flex;
         font-size: get-vw(16px);
       }
+    }
+    @include mediaq ($break-d) {
+      font-size: get-vw(12px);
     }
     &:hover {
       border-radius: 5px;

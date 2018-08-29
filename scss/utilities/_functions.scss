@@ -5,6 +5,6 @@
 
   @function grids_width($col, $space) {
     $proportion: (($col * 100) / 12);
-    $s-pc: 1%;
+    $s-pc: 0.5%;
     @return $proportion - $s-pc;
   }
