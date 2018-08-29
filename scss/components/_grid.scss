@@ -12,21 +12,20 @@
     @include flexbox();
     flex-direction: column;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
     margin: 2.5em 0;
     @include mediaq($break-t) {
       &:first-child {
         flex-direction: row;
         justify-content: center;
       }
-    @include mediaq($break-d){
-      &:first-child{
+    }
+    @include mediaq($break-d) {
+      &:first-child {
         justify-content: space-evenly;
       }
       flex-direction: row;
-      justify-content: start;
       align-items: stretch;
-    }
     }
   }
   @for $i from 1 through 12 {
@@ -34,7 +33,7 @@
       width: 100%;
       justify-content: start;
       align-items: stretch;
-      @include mediaq($break-d){
+      @include mediaq($break-d) {
         width: grids_width($i, 0);
         align-self: start;
       }
@@ -49,18 +48,14 @@
       border-radius: 5px;
       flex-shrink: 3px;
       width: 100%;
-      @include mediaq($break-d){
+      @include mediaq($break-d) {
         align-self: center;
         margin: 0 0.6em;
-        width: grids_width($i, 0)
+        width: grids_width($i, 0);
       }
       margin: 0.2em 0;
     }
   }
-}
-
-.centered {
-  justify-content: center;
 }
 
 /*=========== END GRIDS ===============*/
