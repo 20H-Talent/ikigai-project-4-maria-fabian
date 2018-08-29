@@ -11,11 +11,13 @@
   &__row {
     @include flexbox();
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     margin: 2.5em 0;
-    &:first-child{
-      flex-direction: row;
-      justify-content: start;
+    @include mediaq($break-t) {
+      &:first-child {
+        flex-direction: row;
+        justify-content: start;
+      }
     }
   }
   @for $i from 1 through 12 {
