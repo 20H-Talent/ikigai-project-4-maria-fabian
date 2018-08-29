@@ -3,14 +3,14 @@
 }
 
 %img {
-  display: flex;
+  @include flexbox();
   flex-direction: column;
   justify-content: center;
 }
 
 %primary-headline {
   font-weight: bold;
-  display: flex;
+  @include flexbox();
   justify-content: center;
   color: $color-primary;
   font-family: $font-nav-text;
@@ -20,7 +20,7 @@
 
 %secondary-headline {
   font-weight: 100;
-  display: flex;
+  @include flexbox();
   align-items: flex-start;
   font-size: 15px;
   font-family: $font-nav-text;
@@ -28,7 +28,7 @@
 }
 
 %nav {
-  display: flex;
+  @include flexbox();
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -36,39 +36,34 @@
 }
 
 %btn {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-family: $font-input-buttons;
-    border: none;
-    font-size: 1em;
-    width: 100%;
-    height: 2.5em;
-    border-radius: 5px;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin: 0.75em 0em;
+  @include flexbox();
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: $font-input-buttons;
+  border: none;
+  font-size: 1em;
+  width: 100%;
+  height: 2.5em;
+  border-radius: 5px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 1.5em 0em;
 }
 
 %form {
-  display: flex;
+  @include flexbox();
   flex-direction: column;
   font-family: $font-input-buttons;
   color: $color-text-nav;
 }
 
-// %grid {
-//   display: flex;
-//   flex-direction: column;
-// }
-
 %grid_font {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-family: $font-input-buttons;
-    color: $color-main;
-    font-weight: bold;
+  @include flexbox();
+  justify-content: flex-start;
+  align-items: center;
+  font-family: $font-input-buttons;
+  color: $color-main;
+  font-weight: bold;
 }

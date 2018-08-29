@@ -1,24 +1,19 @@
-.form{
-    @extend %form;
+.form {
+  @extend %form;
+  @include mediaq($break-t) {
+    margin: 2.5em 0 2.5em;
+  }
 }
 
-.form .img--avatar{
-    @extend %img;
-    width: 12em;
-    align-self: center;
-} 
-
 .form input {
-    border: none;
-    border-bottom: 0.5em solid $color-primary;
-    margin:0 0.5em 2em;
-    font-size: 0.8em;
-    padding: 0.8em;
-    font-weight: bold;
+  border: none;
+  border-bottom: 0.5em solid $color-primary;
+  margin: 0 0.5em 2em;
+  font-size: 0.8em;
+  padding: 0.8em;
+  font-weight: bold;
 }
 
 .form label {
-    display: none;
+  display: none;
 }
-
-

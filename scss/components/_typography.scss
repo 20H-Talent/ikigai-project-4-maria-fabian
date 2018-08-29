@@ -1,41 +1,41 @@
 //Fonts
-@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i');
-@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i');
+@import url("https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i");
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i");
 
 .card {
-margin: 2.5em 0 2.5em;
+  margin: 2.5em 0 2.5em;
 }
 
 .headline--secondary {
-    @extend %secondary-headline;
+  @extend %secondary-headline;
 }
 
 .headline--primary {
-    @extend %primary-headline;
+  @extend %primary-headline;
 }
 .card em {
-    font-style: italic;
+  font-style: italic;
 }
-.card p{
-    font-size: 1.075em;
-    color: $color-main;
-    font-family: $font-nav-text;
-    line-height: 1.5em;
+.card p {
+  font-size: 1.075em;
+  color: $color-main;
+  font-family: $font-nav-text;
+  line-height: 1.5em;
 }
 
 .link {
-    @extend %links;
-    color: $color-highlights-loginbutton;
-    font-weight: 600;
+  @extend %links;
+  color: $color-highlights-loginbutton;
+  font-weight: 600;
 }
 
 .blockquote {
-    font-family: $font-nav-text;
-    color: $color-main;
-    font-size: 1.48em;
-    font-style: italic;
-    border-left: 0.35em solid $color-primary;
-    border-radius: 0.2em;
-    padding: 0 1em;
-    margin: 1em;
+  font-family: $font-nav-text;
+  color: $color-main;
+  font-size: 1.48em;
+  font-style: italic;
+  border-left: 0.35em solid $color-primary;
+  border-radius: 0.2em;
+  padding: 0 1.1em;
+  margin: 1em;
 }

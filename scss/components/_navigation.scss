@@ -2,7 +2,8 @@
   list-style: none;
   padding: 0px;
   margin: 0px;
-  display: grid;
+  @include flexbox();
+  flex-direction: column;
   width: 100%;
   @include mediaq($break-t) {
     grid-gap: 0.5em;
@@ -17,7 +18,7 @@
     @include mediaq($break-t) {
       & {
         display: flex;
-        font-size: 1em;
+        font-size: get-vw(16px);
       }
     }
     &:hover {
