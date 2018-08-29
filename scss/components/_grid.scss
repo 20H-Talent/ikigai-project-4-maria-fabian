@@ -18,12 +18,19 @@
         flex-direction: row;
         justify-content: start;
       }
+    @include mediaq($break-d){
+      flex-direction: row;
+      justify-content: start;
+    }
     }
   }
   @for $i from 1 through 12 {
     &__col--#{$i} {
       width: 100%;
       align-self: center;
+      @include mediaq($break-d){
+        align-self: start;
+      }
     }
     &__col--#{$i}.theme__colors {
       $color: "color-" + $i;
