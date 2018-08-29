@@ -9,7 +9,10 @@
     grid-gap: 0.5em;
     margin: 2.5em 0;
     @include mediaq($break-t) {
-      grid-template-columns: 2fr 2fr;
+      &:first-child{
+        flex-direction: row;
+        justify-content: start;
+      }
     }
   }
   @for $i from 1 through 12 {

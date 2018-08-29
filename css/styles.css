@@ -586,8 +586,9 @@ button.theme__colors:hover {
   margin: 2.5em 0;
 }
 @media screen and (min-width: 769px) {
-  .grid__row {
-    grid-template-columns: 2fr 2fr;
+  .grid__row:first-child {
+    flex-direction: row;
+    justify-content: start;
   }
 }
 .grid__col--1 {
@@ -752,6 +753,7 @@ button.theme__colors:hover {
 }
 
 .nav {
+  display: flex;
   list-style: none;
   padding: 0px;
   margin: 0px;

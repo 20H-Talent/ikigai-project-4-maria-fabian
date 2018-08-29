@@ -2,3 +2,15 @@
     $vw-context: (1000*.01) * 1px;
     @return ($target/$vw-context) * 1vw;
   }
+  
+// @function grids_width($items, $screen, $space) {
+//   $s-px: ($space * 16);
+//   $s-pc: ($s-px / $screen) * 100%;
+//   @return ((100% / $items) - $s-pc);
+// }
+//Divide col number by 12, substract the space between each col and multiply it by 100%
+@function grids_width($col, $space) {
+  $proportion: (($col * 100) / 12);
+  $s-pc: 1%;
+  @return $proportion - $s-pc;
+}
