@@ -6,8 +6,8 @@
   flex-direction: column;
   width: 100%;
   @include mediaq($break-t) {
-    grid-gap: 0.5em;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+    flex-direction: row;
+    justify-content: space-between;
   }
   &__item {
     @extend %nav;
@@ -37,6 +37,7 @@
       font-family: $font-input-buttons;
       font-size: 1em;
       color: $color-text-nav;
+      margin: 0 1em;
       &:hover {
         color: white;
       }

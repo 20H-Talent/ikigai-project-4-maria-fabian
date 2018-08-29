@@ -14,8 +14,8 @@
     justify-content: space-between;
     margin: 2.5em 0;
     @include mediaq($break-t) {
-      grid-gap: 1em;
-      grid-template-columns: 2fr 2fr;
+      flex-direction: row;
+      justify-content: start;
     }
   }
   @for $i from 1 through 12 {
