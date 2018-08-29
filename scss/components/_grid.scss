@@ -21,6 +21,7 @@
     @include mediaq($break-d){
       flex-direction: row;
       justify-content: start;
+      align-items: stretch;
     }
     }
   }
@@ -29,6 +30,7 @@
       width: 100%;
       align-self: center;
       @include mediaq($break-d){
+        width: grids_width($i, 0);
         align-self: start;
       }
     }
@@ -42,9 +44,18 @@
       border-radius: 5px;
       flex-shrink: 3px;
       width: 100%;
+      @include mediaq($break-d){
+        align-self: center;
+        margin: 0 1em;
+        width: grids_width($i, 0)
+      }
       margin: 0.2em 0;
     }
   }
+}
+
+.centered {
+  justify-content: center;
 }
 
 /*=========== END GRIDS ===============*/
