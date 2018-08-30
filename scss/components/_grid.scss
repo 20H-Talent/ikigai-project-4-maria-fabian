@@ -29,6 +29,10 @@
       height: 2.5em;
       border-radius: 5px;
       width: auto;
+      @include mediaq($break-d) {
+        margin: 2.5em 1em;
+        width: grids_width($i, 1em);
+      }
     }
   }
 }
