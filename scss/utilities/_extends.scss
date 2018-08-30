@@ -45,7 +45,7 @@
   font-size: 0.9em;
   width: 100%;
   @include mediaq($break-d){
-    width: grids_width(2, 1);
+    width: grids_width(1.75, 1);
   }
   height: 2.5em;
   border-radius: 5px;
@@ -53,6 +53,9 @@
   text-transform: uppercase;
   font-weight: bold;
   margin: 2em auto;
+  @include mediaq($break-d){
+    margin: 2em 1.5em;
+  }
 }
 
 %form {

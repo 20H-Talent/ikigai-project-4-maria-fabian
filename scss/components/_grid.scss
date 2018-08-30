@@ -31,7 +31,7 @@
   @for $i from 1 through 12 {
     &__col--#{$i} {
       width: 100%;
-      justify-content: start;
+      justify-content: center;
       align-items: stretch;
       @include mediaq($break-d) {
         width: grids_width($i, 0);
@@ -50,11 +50,10 @@
       @extend %grid_font;
       height: 2.5em;
       border-radius: 5px;
-      flex-shrink: 3px;
       width: 100%;
       @include mediaq($break-d) {
         align-self: center;
-        margin: 0 0.6em;
+        margin: 0 0.4em;
         width: grids_width($i, 0);
       }
       margin: 0.2em 0;
