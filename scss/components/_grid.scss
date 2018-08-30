@@ -1,9 +1,9 @@
 /* =========== GRIDS ================*/
 .container {
   display: block;
-  margin: 4em 3.1em;
+  margin: 4em 2em;
   @include mediaq($break-t) {
-    margin: 5% 11.2%;
+    margin: 3.5% 10.5%;
   }
 }
 
@@ -13,7 +13,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 2.5em 0;
+    margin: 3em 0;
     @include mediaq($break-t) {
       &:first-child {
         flex-direction: row;
@@ -36,7 +36,7 @@
       @include mediaq($break-d) {
         width: grids_width($i, 0);
         align-self: start;
-        &:last-child{
+        &:last-child {
           display: flex;
         }
       }
@@ -45,7 +45,10 @@
       $color: "color-" + $i;
       $color1: map-get($colours, $color);
       @include flexbox();
-      justify-content: center;
+      @include mediaq($break-d) {
+        justify-content: center;
+      }
+      padding: 0 1em;
       background-color: $color1;
       @extend %grid_font;
       height: 2.5em;

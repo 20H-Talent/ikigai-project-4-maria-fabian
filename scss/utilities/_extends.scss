@@ -11,11 +11,9 @@
 %primary-headline {
   font-weight: bold;
   @include flexbox();
-  justify-content: center;
   color: $color-primary;
   font-family: $font-nav-text;
   align-content: center;
-  margin-left: 15px;
 }
 
 %secondary-headline {
@@ -43,11 +41,11 @@
   font-family: $font-input-buttons;
   border: none;
   font-size: 0.9em;
-  width: 100%;
+  width: 95%;
   @include mediaq($break-d){
     width: grids_width(1.75, 1);
   }
-  height: 2.5em;
+  height: 3em;
   border-radius: 5px;
   color: white;
   text-transform: uppercase;
