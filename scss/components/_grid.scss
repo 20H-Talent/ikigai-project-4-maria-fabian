@@ -22,7 +22,7 @@
     }
     @include mediaq($break-d) {
       &:first-child {
-        justify-content: space-evenly;
+        justify-content: center;
       }
       flex-direction: row;
       align-items: stretch;
@@ -36,12 +36,16 @@
       @include mediaq($break-d) {
         width: grids_width($i, 0);
         align-self: start;
+        &:last-child{
+          display: flex;
+        }
       }
     }
     &__col--#{$i}.theme__colors {
       $color: "color-" + $i;
       $color1: map-get($colours, $color);
       @include flexbox();
+      justify-content: center;
       background-color: $color1;
       @extend %grid_font;
       height: 2.5em;

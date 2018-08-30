@@ -1,9 +1,13 @@
 .form {
   @extend %form;
+  width: 100%;
+  & button[type=submit] {
+    width: 100%;
+    margin: 0;
+  }
   @include mediaq($break-t) {
     margin: 2.5em 0 2.5em;
   }
-  
 }
 
 .form input {
