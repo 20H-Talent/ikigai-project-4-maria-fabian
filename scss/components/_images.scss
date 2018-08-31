@@ -1,22 +1,24 @@
 .img {
   &--frame {
-    display: grid;
-    width: 100%;
+    display: flex;
+    align-self: center;
+    max-width: 100%;
     padding: 1em;
     border: 0.5px solid lighten($color-main, 30%);
-    margin: 0.5em 0;
+    margin: 0.5em auto;
   }
   &--avatar {
-    display: grid;
-    margin-top: 1em;
-    margin-bottom: 2em;
+    display: flex;
+    //modifique dimensions img in form. And revise img dimensions.
+    margin-top: 1.5em;
+    margin-bottom: 1em;
   } 
   &--logo {
-    display: grid;
+    display: block;
     margin: 2em auto;
     @include mediaq($break-t){
       & {
-        margin: 0;
+        margin: 0 auto;
       }
     }
   }

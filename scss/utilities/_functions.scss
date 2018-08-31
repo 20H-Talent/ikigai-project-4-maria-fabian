@@ -2,3 +2,9 @@
     $vw-context: (1000*.01) * 1px;
     @return ($target/$vw-context) * 1vw;
   }
+
+  @function grids_width($col, $space:0) {
+    $proportion: (($col * 100) / 12);
+    $s-pc: .5%;
+    @return $proportion - $s-pc;
+  }

@@ -15,6 +15,22 @@
   }
 }
 
+@mixin flexbox() {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex:  $values;
+  -webkit-flex:  $values;
+  -ms-flex:  $values;
+  flex:  $values;
+}
+
 // @mixin myfun($ini, $end, $tag) {
 //   @for $i from $ini through $end {
 //     .grid__col--#{$i} {

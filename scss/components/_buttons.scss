@@ -1,44 +1,74 @@
 /*=========== BUTTONS ===============*/
-
-// button {
-//   font-family: $font-input-buttons;
-//   border: none;
-//   font-size: 1em;
-//   width: 100%;
-//   height: 2.5em;
-//   border-radius: 5px;
-//   color: white;
-//   text-transform: uppercase;
-//   font-weight: bold;
-//   margin: 0.75em 0em;
-// }
-
 .btn {
   &--default.theme__colors {
     @extend %btn;
     background-color: $color-default-button;
+    &:active {
+      transition: ease-in-out 0.1s;
+      background-color: darken($color-default-button, 20%);
+      outline: none;
+    }
+    &:focus{
+      outline:none;
+    }  
   }
   &--success.theme__colors {
     @extend %btn;
     background-color: $color-success-button;
+    &:active {
+      transition: ease-in-out 0.1s;
+      background-color: darken($color-success-button, 20%);
+      outline: none;
+    }
+    &:focus{
+      outline:none;
+    }  
   }
   &--error.theme__colors {
     @extend %btn;
     background-color: $color-error-button;
+    &:active {
+      transition: ease-in-out 0.1s;
+      background-color: darken($color-error-button, 20%);
+      outline: none;
+    }
+    &:focus{
+      outline:none;
+    }  
   }
   &--warning.theme__colors {
     @extend %btn;
     background-color: $color-warning-button;
+    &:active {
+      transition: ease-in-out 0.1s;
+      background-color: darken($color-warning-button, 20%);
+      outline: none;
+    }
+    &:focus{
+      outline:none;
+    }  
   }
   &--info.theme__colors {
     @extend %btn;
     background-color: $color-info-button;
+    &:active {
+      transition: ease-in-out 0.1s;
+      background-color: darken($color-info-button, 20%);
+      outline: none;
+    }
+    &:focus{
+      outline:none;
+    }  
   }
 }
+//^
+//|
+// These rules can be greatly improved with a loop and a map.
 
 button.theme__colors:hover {
-  transition: ease-in-out .5s;
+  transition: ease-in-out 0.2s;
   box-shadow: inset 0 0 10px #000000;
+  outline: none;
 }
 
 /*=========== END BUTTONS ===============*/

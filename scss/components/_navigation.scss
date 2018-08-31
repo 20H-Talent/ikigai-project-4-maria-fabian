@@ -1,12 +1,17 @@
 .nav {
+  display: flex;
   list-style: none;
   padding: 0px;
   margin: 0px;
-  display: grid;
+  @include flexbox();
+  flex-direction: column;
   width: 100%;
   @include mediaq($break-t) {
-    grid-gap: 0.5em;
-    grid-template-columns: 1.5fr 1fr 1fr 1fr 1fr;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  @include mediaq($break-d){
+    justify-content: center;
   }
   &__item {
     @extend %nav;
@@ -17,8 +22,11 @@
     @include mediaq($break-t) {
       & {
         display: flex;
-        font-size: 1em;
+        font-size: get-vw(16px);
       }
+    }
+    @include mediaq ($break-d) {
+      font-size: get-vw(12px);
     }
     &:hover {
       border-radius: 5px;
@@ -36,6 +44,7 @@
       font-family: $font-input-buttons;
       font-size: 1em;
       color: $color-text-nav;
+      margin: 0 1em;
       &:hover {
         color: white;
       }

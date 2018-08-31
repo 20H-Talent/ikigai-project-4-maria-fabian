@@ -1,40 +1,65 @@
 /* =========== GRIDS ================*/
 .container {
-  margin: 3em 2em;
+  display: block;
+  margin: 4em 2em;
+  @include mediaq($break-t) {
+    margin: 3.5% 10.5%;
+  }
 }
 
 .grid {
   &__row {
-    display: grid;
-    grid-gap: 0.5em;
-    margin: 2.5em 0;
+    @include flexbox();
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3em 0;
     @include mediaq($break-t) {
-      grid-template-columns: 2fr 2fr;
+      &:first-child {
+        flex-direction: row;
+        justify-content: center;
+      }
+    }
+    @include mediaq($break-d) {
+      &:first-child {
+        justify-content: center;
+      }
+      flex-direction: row;
+      align-items: stretch;
     }
   }
   @for $i from 1 through 12 {
     &__col--#{$i} {
-      padding: 0 0.75em;
-      align-self: center;
+      width: 100%;
+      justify-content: center;
+      align-items: stretch;
+      @include mediaq($break-d) {
+        width: grids_width($i, 0);
+        align-self: start;
+        &:last-child {
+          display: flex;
+        }
+      }
     }
     &__col--#{$i}.theme__colors {
       $color: "color-" + $i;
       $color1: map-get($colours, $color);
-      display: grid;
+      @include flexbox();
+      @include mediaq($break-d) {
+        justify-content: center;
+      }
+      padding: 0 1em;
       background-color: $color1;
       @extend %grid_font;
       height: 2.5em;
       border-radius: 5px;
-      width: auto;
-    }
-  }
-}
-
-.card {
-  @include mediaq($break-t) {
-    & {
-      grid-row-start: 1;
-      grid-row-end: 3;
+      width: 100%;
+      @include mediaq($break-d) {
+        align-self: center;
+        margin: 0 0.4em;
+        width: grids_width($i, 0);
+      }
+      margin: 0.2em 0;
     }
   }
 }
